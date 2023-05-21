@@ -22,7 +22,7 @@ const SocialLinks = () => {
                 LinkedIn <FaLinkedin size={30} />
                 </>
             ),
-            href: 'https://www.linkedin.com/in/jesse-taylor-421563260/', 
+            href: 'https://www.linkedin.com/in/jesse-taylor-dev/', 
             style: 'rounded-tr-md'
         },
         {
