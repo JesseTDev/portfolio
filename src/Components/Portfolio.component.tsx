@@ -49,7 +49,7 @@ const Portfolio = () => {
       ],
       desc: "React (Context API, Styled Components) | Javascript | MUI",
       src: trivia,
-      netlify: "https://64699645b93072000849ebcb--helpful-babka-99135a.netlify.app/",
+      netlify: "https://jesse-taylor-trivia-application.netlify.app/",
       codeLink: "https://github.com/JesseTDev/trivia-project-app"
     },
     {
@@ -67,7 +67,7 @@ const Portfolio = () => {
       ],
       desc: "Typescript | React (Redux, Styled Components)",
       src: reduxTodo,
-      netlify: "https://tubular-lebkuchen-db3f58.netlify.app/",
+      netlify: "https://jesse-taylor-redux-todo.netlify.app/",
       codeLink: "https://github.com/JesseTDev/redux-todo-project"
     },
     {
@@ -84,7 +84,7 @@ const Portfolio = () => {
       ],
       desc: "Tailwind CSS | Responsive Mobile First  | Tyescript | React (Context API)",
       src: portfolioImg,
-      netlify: '',
+      netlify: 'https://jessetaylorportfolio.netlify.app/',
       codeLink: "https://github.com/JesseTDev/portfolio-site"
     }
   ];
