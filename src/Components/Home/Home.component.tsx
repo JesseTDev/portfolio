@@ -29,11 +29,11 @@ const Home = () => {
         <div className="flex flex-col justify-center h-full text-center">
           <h2 className="text-4xl sm:text-7xl font-bold text-black">Jesse Taylor</h2>
           <h4 className="m-2 text-2xl sm:text-4xl text-black">Software Developer</h4>
-          <div className="flex">
+          <div className="flex flex-wrap justify-center">
           {techIcons.map((icon, index) => (
-              <p className="text-gray-500 px-3 py-4 max-w-md" key={index}>
+              <div className="px-1 py-4 max-w-md tx-sm" key={index}>
                 {React.createElement(icon.icon, { size: 25, color: icon.color })}
-              </p>
+              </div>
             ))}
           </div>
           <div className="flex items-center justify-center">
