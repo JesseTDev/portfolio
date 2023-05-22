@@ -85,7 +85,7 @@ const Portfolio = () => {
       desc: "Tailwind CSS | Responsive Mobile First  | Tyescript | React (Context API)",
       src: portfolioImg,
       netlify: 'https://jessetaylorportfolio.netlify.app/',
-      codeLink: "https://github.com/JesseTDev/portfolio-site"
+      codeLink: "https://github.com/JesseTDev/portfolio"
     }
   ];
 
