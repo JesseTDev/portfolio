@@ -33,8 +33,8 @@ const Portfolio = () => {
       ],
       desc: "React (Context API, Styled Components) | Javascript | Firebase | MUI",
       src: bookStore,
-      netlify: "https://github.com/JesseTDev/bookstoreproject",
-      codeLink: "https://github.com/JesseTDev/bookstoreproject"
+      netlify: "https://bookstoreprojectapp.netlify.app/",
+      codeLink: "https://github.com/JesseTDev/bookstore-project"
     },
     {
       id: 2,
