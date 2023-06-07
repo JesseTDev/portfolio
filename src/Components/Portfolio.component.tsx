@@ -1,9 +1,10 @@
 import React from "react";
+import ShakaBlog from "../Assets/Portfolio/shakablog.png";
 import bookStore from "../Assets/Portfolio/bookstore.png";
 import trivia from "../Assets/Portfolio/trivia.png";
 import reduxTodo from "../Assets/Portfolio/reduxTodo.png";
 import portfolioImg from "../Assets/Portfolio/portfolio.png"; 
-import {SiTypescript, SiJavascript, SiTailwindcss, SiStyledcomponents, SiRedux, SiNetlify} from 'react-icons/si'; 
+import {SiTypescript, SiJavascript, SiTailwindcss, SiStyledcomponents, SiRedux, SiNextdotjs} from 'react-icons/si'; 
 import {FaReact, FaCss3Alt, FaHtml5} from 'react-icons/fa'; 
 import {IconType} from 'react-icons/lib';
 
@@ -22,6 +23,21 @@ const Portfolio = () => {
   const portfolioInfo: PortfolioInfo[] = [
     {
       id: 1,
+      title: "Shaka Blog Next.js",
+      icons: [
+        { icon: SiTypescript, color: "#007acc" },
+        { icon: SiNextdotjs, color: "gray" },
+        { icon: SiTailwindcss, color: "#48e0d1" },
+        { icon: FaCss3Alt, color: "#264de4" }, 
+        { icon: FaHtml5, color: "#e34c26" },
+      ],
+      desc: "Next.js | Typescript | OpenAi | NextAuth.js | Tailwind CSS",
+      src: ShakaBlog,
+      netlify: "https://shaka-blog-7ih3wt345-jessetdev.vercel.app",
+      codeLink: "https://github.com/JesseTDev/ai-shaka-blog"
+    },
+    {
+      id: 2,
       title: "Book Store Project",
       icons: [
         { icon: SiJavascript, color: "#F0DB4F" },
@@ -29,7 +45,6 @@ const Portfolio = () => {
         { icon: FaCss3Alt, color: "#264de4" }, 
         { icon: FaHtml5, color: "#e34c26" },
         { icon: SiStyledcomponents, color: "pink" },
-        { icon: SiNetlify, color: "#29B6B3"}, 
       ],
       desc: "React (Context API, Styled Components) | Javascript | Firebase | MUI",
       src: bookStore,
@@ -37,7 +52,7 @@ const Portfolio = () => {
       codeLink: "https://github.com/JesseTDev/bookstore-project"
     },
     {
-      id: 2,
+      id: 3,
       title: "Trivia Application",
       icons: [
         { icon: SiJavascript, color: "#F0DB4F" },
@@ -45,46 +60,44 @@ const Portfolio = () => {
         { icon: FaCss3Alt, color: "#264de4" }, 
         { icon: FaHtml5, color: "#e34c26" },
         { icon: SiStyledcomponents, color: "pink" },
-        { icon: SiNetlify, color: "#29B6B3"},
+       
       ],
       desc: "React (Context API, Styled Components) | Javascript | MUI",
       src: trivia,
-      netlify: "https://jesse-taylor-trivia-application.netlify.app/",
+      netlify: "https://jesse-taylor-trivia-application.netlify.app",
       codeLink: "https://github.com/JesseTDev/trivia-project-app"
     },
     {
-      id: 3,
+      id: 4,
       title: "Redux Todo Application",
       icons: [
         { icon: SiTypescript, color: "#007acc" },
-        { icon: SiJavascript, color: "#F0DB4F" },
         { icon: FaReact, color: "#61dbfb" },
         { icon: SiRedux, color: "#764abc" },
         { icon: FaCss3Alt, color: "#264de4" }, 
         { icon: FaHtml5, color: "#e34c26" },
         { icon: SiStyledcomponents, color: "pink" },
-        { icon: SiNetlify, color: "#29B6B3"},
+       
       ],
       desc: "Typescript | React (Redux, Styled Components)",
       src: reduxTodo,
-      netlify: "https://jesse-taylor-redux-todo.netlify.app/",
+      netlify: "https://jesse-taylor-redux-todo.netlify.app",
       codeLink: "https://github.com/JesseTDev/redux-todo-project"
     },
     {
-      id: 4,
+      id: 5,
       title: "Portfolio Site",
       icons: [
         { icon: SiTypescript, color: "#007acc" },
-        { icon: SiJavascript, color: "#F0DB4F" },
         { icon: FaReact, color: "#61dbfb" },
         { icon: SiTailwindcss, color: "#48e0d1" },
         { icon: FaCss3Alt, color: "#264de4" }, 
         { icon: FaHtml5, color: "#e34c26" },
-        { icon: SiNetlify, color: "#29B6B3"},
+      
       ],
       desc: "Tailwind CSS | Responsive Mobile First  | Tyescript | React (Context API)",
       src: portfolioImg,
-      netlify: 'https://jessetaylorportfolio.netlify.app/',
+      netlify: 'https://jessetaylorportfolio.netlify.app',
       codeLink: "https://github.com/JesseTDev/portfolio"
     }
   ];
