@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import { MdOutlineArrowForward } from 'react-icons/md'
 import {BsGit} from 'react-icons/bs'; 
-import {SiTypescript, SiJavascript, SiTailwindcss, SiStyledcomponents, SiRedux, SiNetlify} from 'react-icons/si'; 
+import {SiTypescript, SiJavascript, SiTailwindcss, SiStyledcomponents, SiRedux, SiNextdotjs } from 'react-icons/si'; 
 import {FaReact, FaCss3Alt, FaHtml5} from 'react-icons/fa'; 
 import { Link } from "react-scroll";
 import { PortfolioContext } from "../../Context/Site.context";
@@ -20,7 +20,7 @@ const Home = () => {
     { icon: FaCss3Alt, color: "#264de4" }, 
     { icon: FaHtml5, color: "#e34c26" },
     { icon: BsGit, color: "#F1502F" },
-    { icon: SiNetlify, color: "#29B6B3"},
+    { icon: SiNextdotjs, color: "gray"}, 
   ];
 
   return (
