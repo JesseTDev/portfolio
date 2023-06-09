@@ -14,8 +14,9 @@ interface PortfolioInfo {
   icons?: { icon: IconType; color: string }[];
   desc: string;
   src?: string;
-  netlify: string;
+  netlify?: string;
   codeLink: string; 
+  vercel?: string; 
 };
 
 const Portfolio = () => {
@@ -33,7 +34,7 @@ const Portfolio = () => {
       ],
       desc: "Next.js | Typescript | OpenAi | NextAuth.js | Tailwind CSS",
       src: ShakaBlog,
-      netlify: "https://shaka-blog-7ih3wt345-jessetdev.vercel.app",
+      vercel: "https://shaka-blog.vercel.app",
       codeLink: "https://github.com/JesseTDev/ai-shaka-blog"
     },
     {
