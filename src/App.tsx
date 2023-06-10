@@ -1,26 +1,16 @@
-import React from 'react';
-import './index.css'; 
+import React from "react";
+import HeroSection from "./components/HeroSection";
+import Projects from "./components/Projects";
 
-// Imported Components 
-import Home from './Components/Home/Home.component';
-import About from './Components/About.component';
-import SocialLinks from './Components/Home/SocialLinks.component';
-import Portfolio from './Components/Portfolio.component';
-import Contact from './Components/Contact.component';
-import Navbar from './Components/Navbar.component';
+const App = () => {
 
-const  App = () => {
   return (
-    <div>
-      <Navbar />
-      <Home /> 
-      <About /> 
-      <Portfolio /> 
-      <Contact /> 
-      <SocialLinks /> 
-    </div>
+
+      <div className='font-inter bg-white max-w-5xl mx-auto w-11/12'>
+        <HeroSection /> 
+        <Projects /> 
+      </div>
   );
 }
 
 export default App;
-  
