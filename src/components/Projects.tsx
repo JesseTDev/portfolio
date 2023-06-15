@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 
 export type ProjectType = {
@@ -75,24 +75,47 @@ const works: ProjectType[] = [
   
 ];
 
+
 const Projects = () => {
-  return (
-    <section className='h-full'>
-      <h2 className='text-3xl font-bold mb-5 text-indigo-600'>Projects</h2>
-      <div  id='projects'  className='grid grid-cols-1 md:grid-cols-3 gap-5'>
-        {works.map((project: ProjectType) => (
-          <ProjectCard
-            key={project.title}
-            imgURL={project.imgURL}
-            title={project.title}
-            tech={project.tech}
-            gitHub={project.gitHub}
-            liveURL={project.liveURL}
-          />
-        ))}
-      </div>
-    </section>
-  );
+  const [searchTech, setSearchTech] = useState('');
+
+
+  const searchByTechnology = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTech(event.target.value);
+  }; 
+
+  const filteredProjects = works.filter((project) =>
+  project.tech.some((tech) =>
+    tech.toLowerCase().includes(searchTech.toLowerCase())
+  )
+);
+  
+return (
+  <section className="h-full">
+    <h2 className="text-3xl font-bold mb-5 text-indigo-600">Projects</h2>
+    <div className="search-container mb-5">
+      <input
+        onChange={searchByTechnology}
+        type="search"
+        placeholder="Search Technologies"
+        className="h-10 p-5 border-2 rounded-md border-slate-300"
+      />
+    </div>
+    <div id="projects" className="grid grid-cols-1 md:grid-cols-3 gap-5 project-container">
+      {filteredProjects.map((project: ProjectType) => (
+        <ProjectCard
+          key={project.title}
+          imgURL={project.imgURL}
+          title={project.title}
+          tech={project.tech}
+          gitHub={project.gitHub}
+          liveURL={project.liveURL}
+        />
+      ))}
+    </div>
+  </section>
+);
 };
+
 
 export default Projects;
