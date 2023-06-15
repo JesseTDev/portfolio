@@ -85,6 +85,7 @@ const Projects = () => {
   }; 
 
   const filteredProjects = works.filter((project) =>
+
   project.tech.some((tech) =>
     tech.toLowerCase().includes(searchTech.toLowerCase())
   )
