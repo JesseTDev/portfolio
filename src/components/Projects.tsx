@@ -98,7 +98,7 @@ return (
       <input
         onChange={searchByTechnology}
         type="search"
-        placeholder="Search Technologies"
+        placeholder="Search Technology"
         className="h-10 p-5 border-2 rounded-md border-slate-300"
       />
     </div>
