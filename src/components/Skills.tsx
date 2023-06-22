@@ -25,6 +25,7 @@ const SkillTypes: SkillType[] = [
 ];
 
 function Skills() {
+  
   return (
     <div>
          <h2 className='text-3xl text-center font-bold mt-12 text-indigo-600'>What I do</h2>
